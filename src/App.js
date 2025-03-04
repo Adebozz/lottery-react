@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-// import web3 from "./web3";
+import web3 from "./web3";
 import lottery from './lottery';
 
 class App extends React.Component {
@@ -22,8 +22,8 @@ class App extends React.Component {
      <div>
         <h2>Lottery Contract</h2>
         <p>
-          This contract is managed by {this.state.manager}
-          There are currently {this.state.players.length} people enter competing to win {web3.utils.fromwei(this.state.balance, 'ether')} ether!   
+          This contract is managed by {this.state.manager}.
+          There are currently {this.state.players.length} people enter competing to win {web3.utils.fromWei(this.state.balance, 'ether')} ether!   
        </p>
 
      </div>
