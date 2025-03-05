@@ -25,7 +25,17 @@ class App extends React.Component {
           This contract is managed by {this.state.manager}.
           There are currently {this.state.players.length} people enter competing to win {web3.utils.fromWei(this.state.balance, 'ether')} ether!   
        </p>
+      <hr />
 
+      <form>
+        <h4>Want to try your luck?</h4>
+        <div>
+          <label>Amount of ether to enter</label>
+          <input 
+            onChange={event => this.state}
+          />
+        </div>
+      </form>
      </div>
     );
   }
