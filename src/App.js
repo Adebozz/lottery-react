@@ -7,7 +7,8 @@ class App extends React.Component {
   state = {
     manager: '',
     players: [],
-    balance: ''
+    balance: '',
+    value: ''
   };
 
   async componentDidMount() {
@@ -32,9 +33,11 @@ class App extends React.Component {
         <div>
           <label>Amount of ether to enter</label>
           <input 
-            onChange={event => this.state}
+          value={this.state.value}
+            onChange={event => this.setState({ value: event.target.value })}
           />
         </div>
+        <button>Enter</button>
       </form>
      </div>
     );
