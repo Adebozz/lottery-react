@@ -23,6 +23,11 @@ class App extends React.Component {
     event.preventDefault();
 
     const accounts = await web3.eth.getAccounts();
+
+    await lottery.methods.enter().send({
+      from: accounts[0],
+      value: web3.utils.toWei(this.state.value, 'ether')
+    });
   };
   render() {
     return (
