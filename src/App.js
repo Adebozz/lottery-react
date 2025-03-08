@@ -60,7 +60,7 @@ class App extends React.Component {
       <form onSubmit={this.onSubmit}>
         <h4>Want to try your luck?</h4>
         <div>
-          <label>Amount of ether to enter</label>
+          <label>Amount of ether to enter: </label>
           <input 
           value={this.state.value}
             onChange={event => this.setState({ value: event.target.value })}
