@@ -44,7 +44,7 @@ class App extends React.Component {
       from: accounts[0]
     });
 
-    this.setState({ message: 'A Winner has been picked! '})
+    this.setState({ message: 'A Winner has been picked! '});
   };
 
   render() {
@@ -72,7 +72,7 @@ class App extends React.Component {
       <hr />
 
       <h4>Ready to pick a winner?</h4>
-
+      <button>Pick Winner</button>
       <hr />
 
       <h1>{ this.state.message }</h1>
