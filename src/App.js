@@ -58,7 +58,7 @@ class App extends React.Component {
 
       <hr />
 
-      <h1>Enter</h1>
+      <h1>{ this.state.message }</h1>
      </div>
     );
   }
