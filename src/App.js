@@ -43,6 +43,8 @@ class App extends React.Component {
     await lottery.methods.pickWinner().send({
       from: accounts[0]
     });
+
+    this.setState({ message: 'A Winner has been picked! '})
   };
 
   render() {
