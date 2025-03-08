@@ -34,6 +34,17 @@ class App extends React.Component {
 
     this.setState({ message: 'You have been entered!'});
   };
+
+  onClick = async () => {
+    const accounts = await web3.eth.getAccounts();
+
+    this.setState({ message: 'Waiting on transaction success... '})
+
+    await lottery.methods.pickWinner().send({
+      from: accounts[0]
+    });
+  };
+
   render() {
     return (
      <div>
@@ -58,7 +69,13 @@ class App extends React.Component {
 
       <hr />
 
+      <h4>Ready to pick a winner?</h4>
+
+      <hr />
+
       <h1>{ this.state.message }</h1>
+
+
      </div>
     );
   }
