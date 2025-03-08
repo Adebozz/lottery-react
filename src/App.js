@@ -55,6 +55,10 @@ class App extends React.Component {
         </div>
         <button>Enter</button>
       </form>
+
+      <hr />
+
+      <h1>Enter</h1>
      </div>
     );
   }
