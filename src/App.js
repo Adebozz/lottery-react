@@ -72,7 +72,7 @@ class App extends React.Component {
       <hr />
 
       <h4>Ready to pick a winner?</h4>
-      <button>Pick Winner</button>
+      <button>Pick a Winner</button>
       <hr />
 
       <h1>{ this.state.message }</h1>
